@@ -6,6 +6,8 @@ The goal of this project was to analyze employee survey data and build predictiv
 
 Key drivers of attrition included workload imbalance (overwork & underutilization), lack of promotion, and low satisfaction levels, indicating systemic issues in workforce management.
 
+---
+ 
 ## 🧩 Business Understanding
 Salifort Motors is experiencing a high employee turnover rate, leading to increased costs in hiring, training, and productivity loss.
 
@@ -17,6 +19,8 @@ Understanding why employees leave is critical to:
 
 The objective was to predict attrition and uncover actionable drivers to help leadership design better retention strategies.
 
+---
+ 
 ## 📊 Data Understanding
 The dataset consists of employee-level survey and performance data, including:
 
@@ -32,6 +36,8 @@ Initial data validation revealed:
 
 ![Monthly Hours by Number of Projects](Screenshots/6.png)
 
+---
+ 
 ## 🔍 Exploratory Data Analysis (EDA)
 Key patterns identified through Tableau dashboards:
 
@@ -50,6 +56,8 @@ Early exits were linked to dissatisfaction, while employees staying beyond ~6 ye
 - **Department impact was minimal**\
 Attrition patterns were consistent across departments → indicates systemic issues
 
+---
+ 
 ## ⚙️ Modeling and Evaluation
 ### Feature Engineering
 Behavioral features were engineered from:
@@ -75,12 +83,16 @@ Behavioral features were engineered from:
 
 Tree-based models outperformed logistic regression by capturing non-linear relationships in employee behavior.
 
+---
+ 
 ## 📈 Key Insights
 - Attrition is driven more by work structure than compensation alone
 - Overworked high performers are at high risk of leaving
 - Lack of promotion creates perceived unfairness
 - Employees are not rewarded for long-term loyalty
 
+---
+ 
 ## ✅ Conclusion
 
 The analysis shows that employee attrition at Salifort Motors is primarily driven by:
@@ -94,6 +106,13 @@ The predictive model enables:\
 👉 Data-driven intervention strategies\
 👉 Improved workforce planning
 
+---
+ 
+## 🔗 Live Dashboard
+👉 [Tableau Public](https://public.tableau.com/app/profile/sourin.adak/viz/EmployeeAttritionAnalysisSalifortMotorsPACEFrameworkAnalyzeStage/Story1)
+
+---
+ 
 ## 🔮 Future Work
 - Incorporate employee feedback or engagement survey text data
 - Deploy real-time attrition monitoring dashboards
