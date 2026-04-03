@@ -1,0 +1,2765 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='HR_Attrition' inline='true' name='federated.09onw4n18ceu1b1dz2kx20464naf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HR_Attrition' name='textscan.0micuqb03coz921ent29q1mwwi0q'>
+            <connection class='textscan' directory='F:/Tableau/Capstone/New folder/main' filename='HR_Attrition.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0micuqb03coz921ent29q1mwwi0q' name='HR_Attrition.csv' table='[HR_Attrition#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='satisfaction_level' ordinal='1' />
+            <column datatype='real' name='last_evaluation' ordinal='2' />
+            <column datatype='integer' name='number_project' ordinal='3' />
+            <column datatype='integer' name='average_monthly_hours' ordinal='4' />
+            <column datatype='integer' name='tenure' ordinal='5' />
+            <column datatype='integer' name='work_accident' ordinal='6' />
+            <column datatype='integer' name='left' ordinal='7' />
+            <column datatype='integer' name='promotion_last_5years' ordinal='8' />
+            <column datatype='string' name='department' ordinal='9' />
+            <column datatype='string' name='salary' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>satisfaction_level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[satisfaction_level]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>satisfaction_level</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_evaluation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[last_evaluation]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>last_evaluation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_project</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_project]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>number_project</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_monthly_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_monthly_hours]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>average_monthly_hours</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_accident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[work_accident]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>work_accident</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>left</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[left]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>left</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>promotion_last_5years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[promotion_last_5years]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>promotion_last_5years</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>department</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[salary]</local-name>
+            <parent-name>[HR_Attrition.csv]</parent-name>
+            <remote-alias>salary</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]&quot;' value='Left' />
+          <alias key='&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]&quot;' value='No' />
+          <alias key='&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]&quot;' value='Yes' />
+          <alias key='&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]&quot;' value='Stayed' />
+        </aliases>
+      </column>
+      <column caption='Satisfaction Level L = 1' datatype='real' name='[Avg monthly hours L=1 (copy)_0799674788503555]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [left] = 1 THEN [satisfaction_level] END' />
+      </column>
+      <column caption='Avg monthly hours L=1' datatype='integer' name='[Calculation1 (copy)_0289774844461057]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [left] = 1 THEN [average_monthly_hours] END' />
+      </column>
+      <column caption='Avg monthly hours L=0' datatype='integer' name='[Calculation_0289774844280832]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [left] = 0 THEN [average_monthly_hours] END' />
+      </column>
+      <column aggregation='Sum' caption='Short tenure' datatype='integer' name='[Calculation_0799674823974919]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [tenure] &lt; 7 THEN [tenure] END' />
+      </column>
+      <column caption='Satisfaction Level L = 0' datatype='real' name='[Satisfaction Level L = 1 (copy)_0799674788622340]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [left] = 0 THEN [satisfaction_level] END' />
+      </column>
+      <column aggregation='Sum' caption='Long tenure' datatype='integer' name='[Short tenure (copy)_0799674824298504]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='IF [tenure] &gt;= 7 THEN [tenure] END' />
+      </column>
+      <column caption='HR_Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' role='measure' type='quantitative' />
+      <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+      <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+      <column caption='Last Evaluation' datatype='real' name='[last_evaluation]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Sum' caption='Number Of Projects' datatype='integer' name='[number_project]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Promotion Last 5Years' datatype='integer' name='[promotion_last_5years]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+      <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Tenure' datatype='integer' name='[tenure]' role='dimension' type='ordinal' />
+      <column caption='Work Accident' datatype='integer' name='[work_accident]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation1 (copy)_0289774844461057]' derivation='None' name='[none:Calculation1 (copy)_0289774844461057:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0289774844280832]' derivation='None' name='[none:Calculation_0289774844280832:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Short tenure (copy)_0799674824298504]' derivation='None' name='[none:Short tenure (copy)_0799674824298504:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[salary]' derivation='None' name='[none:salary:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Avg monthly hours L=1 (copy)_0799674788503555]' derivation='Sum' name='[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1 (copy)_0289774844461057]' derivation='Sum' name='[sum:Calculation1 (copy)_0289774844461057:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0289774844280832]' derivation='Sum' name='[sum:Calculation_0289774844280832:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Satisfaction Level L = 1 (copy)_0799674788622340]' derivation='Sum' name='[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Inclusions (Long tenure,Salary)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Short tenure (copy)_0799674824298504:ok]' />
+          <groupfilter function='level-members' level='[none:salary:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/hp/Documents/My Tableau Repository/Datasources/HR_Attrition.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/01/2026 02:47:32 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='HR_Attrition' increment-value='%null%' refresh-type='create' rows-inserted='11991' timestamp-start='2026-04-01 14:47:32.253' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11991</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>satisfaction_level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[satisfaction_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>satisfaction_level</remote-alias>
+              <ordinal>1</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_evaluation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[last_evaluation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_evaluation</remote-alias>
+              <ordinal>2</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_project</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_project]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_project</remote-alias>
+              <ordinal>3</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_monthly_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[average_monthly_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_monthly_hours</remote-alias>
+              <ordinal>4</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tenure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure</remote-alias>
+              <ordinal>5</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>work_accident</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[work_accident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>work_accident</remote-alias>
+              <ordinal>6</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>left</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[left]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>left</remote-alias>
+              <ordinal>7</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>promotion_last_5years</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[promotion_last_5years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>promotion_last_5years</remote-alias>
+              <ordinal>8</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>department</remote-alias>
+              <ordinal>9</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>salary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>salary</remote-alias>
+              <ordinal>10</ordinal>
+              <family>HR_Attrition.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:left:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774844280832:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Tenure L=0 (copy)_0799674785878017:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=0 (copy)_0799674785730560:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation1 (copy)_0289774844461057:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:salary:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;high&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:left:ok]' type='shape'>
+            <map to='circle'>
+              <bucket>0</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='satisfaction_level' />
+        <field-sort-custom-order field='last_evaluation' />
+        <field-sort-custom-order field='number_project' />
+        <field-sort-custom-order field='Calculation_0289774847700994' />
+        <field-sort-custom-order field='Calculation11 (copy)_0289774847873027' />
+        <field-sort-custom-order field='average_monthly_hours' />
+        <field-sort-custom-order field='Calculation_0289774844280832' />
+        <field-sort-custom-order field='Avg monthly hours L=0 (copy)_0799674785730560' />
+        <field-sort-custom-order field='Tenure L=0 (copy)_0799674785878017' />
+        <field-sort-custom-order field='Calculation1 (copy)_0289774844461057' />
+        <field-sort-custom-order field='Avg monthly hours L=1 (copy)_0799674788503555' />
+        <field-sort-custom-order field='Satisfaction Level L = 1 (copy)_0799674788622340' />
+        <field-sort-custom-order field='Calculation_0377735616409601' />
+        <field-sort-custom-order field='left0avg (copy)_0377735616552962' />
+        <field-sort-custom-order field='tenure' />
+        <field-sort-custom-order field='Calculation_0799674823974919' />
+        <field-sort-custom-order field='Short tenure (copy)_0799674824298504' />
+        <field-sort-custom-order field='work_accident' />
+        <field-sort-custom-order field='left' />
+        <field-sort-custom-order field='promotion_last_5years' />
+        <field-sort-custom-order field='department' />
+        <field-sort-custom-order field='salary' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='HR_Attrition.csv' id='HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086'>
+            <properties context=''>
+              <relation connection='textscan.0micuqb03coz921ent29q1mwwi0q' name='HR_Attrition.csv' table='[HR_Attrition#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='satisfaction_level' ordinal='1' />
+                  <column datatype='real' name='last_evaluation' ordinal='2' />
+                  <column datatype='integer' name='number_project' ordinal='3' />
+                  <column datatype='integer' name='average_monthly_hours' ordinal='4' />
+                  <column datatype='integer' name='tenure' ordinal='5' />
+                  <column datatype='integer' name='work_accident' ordinal='6' />
+                  <column datatype='integer' name='left' ordinal='7' />
+                  <column datatype='integer' name='promotion_last_5years' ordinal='8' />
+                  <column datatype='string' name='department' ordinal='9' />
+                  <column datatype='string' name='salary' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action2_478B6E568A6E457E90D0D44A06440A15]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Satisfaction level by Tenure' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Satisfaction level by Tenure' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_F2B19C33FEF34B96A9908585642A8FA2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 3 (generated)' name='[Action3_CA55B8902D6C4A8AA73F7546C791D9F2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 3' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Left' />
+        <param name='target' value='Dashboard 3' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Count of stayed/left by Department'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='&quot;Count&quot;' datatype='string' name='[Calculation_0799674836000784]' role='dimension' type='nominal' user:unnamed='Sheet 10'>
+              <calculation class='tableau' formula='&quot;Count&quot;' />
+            </column>
+            <column caption='HR_Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' pivot='key' type='quantitative' />
+            <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0799674836000784]' derivation='None' name='[none:Calculation_0799674836000784:nk]' pivot='key' type='nominal' />
+            <column-instance column='[department]' derivation='None' name='[none:department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:department:nk]' direction='DESC' using='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' field-type='quantitative' major-origin='0' major-spacing='500' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='' />
+            <format attr='tick-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' value='false' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674836000784:nk]' value='-90' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674836000784:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674836000784:nk]' value='#000000' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:department:nk]' value='#000000' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:department:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='1' />
+            <format attr='border-style' data-class='total' scope='cols' value='solid' />
+            <format attr='border-color' data-class='total' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#e6e6e6' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674836000784:nk] * [federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk])</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:department:nk] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok])</cols>
+      </table>
+      <simple-id uuid='{ABC71EF6-BD8A-481F-AC84-5255898CA250}' />
+    </worksheet>
+    <worksheet name='Monthly Hours by Last Evaluation Score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+            <column caption='Last Evaluation' datatype='real' name='[last_evaluation]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[average_monthly_hours]' derivation='Sum' name='[sum:average_monthly_hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[last_evaluation]' derivation='Sum' name='[sum:last_evaluation:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' field-type='quantitative' major-origin='0' major-spacing='50' min='90' range-type='fixedmin' scope='cols' type='space' />
+            <format attr='height' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='65' />
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:last_evaluation:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.10000000000000001' min='0.31' range-type='fixedmin' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:last_evaluation:qk]' value='#000000' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='5' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='stroke-color' id='refline0' value='#ff00009b' />
+            <format attr='font-weight' id='refline0' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='166.67 hrs./mo.' label-type='custom' scope='per-pane' value='166' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:last_evaluation:qk]</rows>
+        <cols>[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]</cols>
+      </table>
+      <simple-id uuid='{677D9C86-0B2D-4612-91E4-0925F6A6B523}' />
+    </worksheet>
+    <worksheet name='Monthly Hours by Number of Projects'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='Avg monthly hours L=1' datatype='integer' name='[Calculation1 (copy)_0289774844461057]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [left] = 1 THEN [average_monthly_hours] END' />
+            </column>
+            <column caption='Avg monthly hours L=0' datatype='integer' name='[Calculation_0289774844280832]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [left] = 0 THEN [average_monthly_hours] END' />
+            </column>
+            <column caption='&quot;Number of Projects&quot;' datatype='string' name='[Calculation_0289774854930437]' role='dimension' type='nominal' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='&quot;Number of Projects&quot;' />
+            </column>
+            <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0289774854930437]' derivation='None' name='[none:Calculation_0289774854930437:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[number_project]' derivation='None' name='[none:number_project:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Number Of Projects' datatype='integer' name='[number_project]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation1 (copy)_0289774844461057]' derivation='Sum' name='[sum:Calculation1 (copy)_0289774844461057:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0289774844280832]' derivation='Sum' name='[sum:Calculation_0289774844280832:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]&quot;</bucket>
+              <bucket>&quot;[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>1</bucket>
+              <bucket>0</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' direction='DESC' measure-to-sort-by='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]' scope='cols' value='false' />
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]' field-type='quantitative' major-origin='0' major-spacing='50' min='90' minor-origin='0' minor-show='false' minor-spacing='10' range-type='fixedmin' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]' scope='cols' value='Average Monthly Hours' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='tick-color' scope='cols' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' value='left' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' value='56' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' value='false' />
+            <format attr='text-align' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' value='center' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' value='normal' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]' value='#000000' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774854930437:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774854930437:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774854930437:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline2' value='bp_orange' />
+            <format attr='palette' id='refline1' value='bp_gray40' />
+            <format attr='opacity' id='refline1' value='226' />
+            <format attr='palette' id='refline4' value='bp_grayblue' />
+            <format attr='palette' id='refline3' value='bp_yellow' />
+            <format attr='opacity' id='refline3' value='219' />
+            <format attr='opacity' id='refline4' value='219' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' value='Left'>
+              <formatted-text>
+                <run>Left</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]' boxplot-mark-exclusion='true' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]' z-order='1' />
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]' boxplot-mark-exclusion='true' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline4' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.86756908893585205' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.86756908893585205' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.86756908893585205' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774854930437:nk] / ([federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]))</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation_0289774844280832:qk] + [federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Calculation1 (copy)_0289774844461057:qk])</cols>
+      </table>
+      <simple-id uuid='{0B21D2F2-2779-4974-B166-85AD128AED93}' />
+    </worksheet>
+    <worksheet name='Monthly Hours by Satisfaction Level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+            <column-instance column='[average_monthly_hours]' derivation='Sum' name='[sum:average_monthly_hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[satisfaction_level]' derivation='Sum' name='[sum:satisfaction_level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' field-type='quantitative' major-origin='0' major-spacing='50' min='90' range-type='fixedmin' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:satisfaction_level:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.20000000000000001' scope='rows' type='space' />
+            <format attr='height' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='65' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:satisfaction_level:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:satisfaction_level:qk]' value='#000000' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='5' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='stroke-color' id='refline0' value='#ff00009b' />
+            <format attr='font-weight' id='refline0' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' value='Left'>
+              <formatted-text>
+                <run>Left</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='166.67 hrs./mo.' label-type='custom' scope='per-pane' value='166' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:satisfaction_level:qk]</rows>
+        <cols>[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]</cols>
+      </table>
+      <simple-id uuid='{803A8BC4-BEF8-4A41-B78A-1085B4DC5B5B}' />
+    </worksheet>
+    <worksheet name='Monthly hours vs Promotion last 5 years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='&quot;Promoted in last 5 Years&quot;' datatype='string' name='[Calculation_0799674833391630]' role='dimension' type='nominal' user:unnamed='Sheet 9'>
+              <calculation class='tableau' formula='&quot;Promoted in last 5 Years&quot;' />
+            </column>
+            <column caption='Average Monthly Hours' datatype='integer' name='[average_monthly_hours]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0799674833391630]' derivation='None' name='[none:Calculation_0799674833391630:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[promotion_last_5years]' derivation='None' name='[none:promotion_last_5years:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Promotion Last 5Years' datatype='integer' name='[promotion_last_5years]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[average_monthly_hours]' derivation='Sum' name='[sum:average_monthly_hours:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:promotion_last_5years:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:promotion_last_5years:ok]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' field-type='quantitative' major-origin='100' major-spacing='50' min='90' range-type='fixedmin' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:promotion_last_5years:ok]' value='48' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:promotion_last_5years:ok]' value='true' />
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674833391630:nk]' value='true' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674833391630:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674833391630:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674833391630:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' value='normal' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:promotion_last_5years:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='5' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#ff00009b' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='font-weight' id='refline0' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+              <shape column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='166.67 hrs./mo.' label-type='custom' scope='per-pane' value='166' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674833391630:nk] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:promotion_last_5years:ok])</rows>
+        <cols>[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:average_monthly_hours:qk]</cols>
+      </table>
+      <simple-id uuid='{BCEA721A-4A87-4398-9C31-824F7B56ACAB}' />
+    </worksheet>
+    <worksheet name='Number of Projects Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='&quot;Count&quot;' datatype='string' name='[Calculation_0289774860124169]' role='dimension' type='nominal' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='&quot;Count&quot;' />
+            </column>
+            <column caption='HR_Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cum:cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:ok]' pivot='key' type='ordinal'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0289774860124169]' derivation='None' name='[none:Calculation_0289774860124169:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[number_project]' derivation='None' name='[none:number_project:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Number Of Projects' datatype='integer' name='[number_project]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='60' />
+            <format attr='display' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' value='false' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='#000000' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_yellow' />
+            <format attr='opacity' id='refline0' value='219' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+              <text column='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cum:cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:ok]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>Left:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Number Of Projects:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk] * [federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk])</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok])</cols>
+      </table>
+      <simple-id uuid='{1BD317B3-F1E3-4346-A558-886A0D9B3710}' />
+    </worksheet>
+    <worksheet name='Salary histogram by tenure : Long tenured'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='&quot;Count&quot;' datatype='string' name='[Calculation_0799674825547786]' role='dimension' type='nominal' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='&quot;Count&quot;' />
+            </column>
+            <column caption='&quot;Tenure&quot;' datatype='string' name='[Calculation_0799674825916428]' role='dimension' type='nominal' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='&quot;Tenure&quot;' />
+            </column>
+            <column aggregation='Sum' caption='Long tenure' datatype='integer' name='[Short tenure (copy)_0799674824298504]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [tenure] &gt;= 7 THEN [tenure] END' />
+            </column>
+            <column caption='HR_Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0799674825547786]' derivation='None' name='[none:Calculation_0799674825547786:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0799674825916428]' derivation='None' name='[none:Calculation_0799674825916428:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Short tenure (copy)_0799674824298504]' derivation='None' name='[none:Short tenure (copy)_0799674824298504:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[salary]' derivation='None' name='[none:salary:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Tenure' datatype='integer' name='[tenure]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Short tenure (copy)_0799674824298504:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Short tenure (copy)_0799674824298504:ok]' />
+              <groupfilter function='member' level='[none:Short tenure (copy)_0799674824298504:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;low&quot;</bucket>
+              <bucket>&quot;medium&quot;</bucket>
+              <bucket>&quot;high&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Short tenure (copy)_0799674824298504:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' value='false' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='#000000' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825916428:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825916428:nk]' value='bold' />
+            <format attr='text-format' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Short tenure (copy)_0799674824298504:ok]' value='*' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Short tenure (copy)_0799674824298504:ok]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Short tenure (copy)_0799674824298504:ok]' value='normal' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='1' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk] * [federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk])</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825916428:nk] / ([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Short tenure (copy)_0799674824298504:ok] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]))</cols>
+      </table>
+      <simple-id uuid='{57A4F9E2-9FFF-4AF4-B6D7-7BF639BDF375}' />
+    </worksheet>
+    <worksheet name='Salary histogram by tenure : Short tenured'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column aggregation='Sum' caption='Short tenure' datatype='integer' name='[Calculation_0799674823974919]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='IF [tenure] &lt; 7 THEN [tenure] END' />
+            </column>
+            <column caption='&quot;Count&quot;' datatype='string' name='[Calculation_0799674825547786]' role='dimension' type='nominal' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='&quot;Count&quot;' />
+            </column>
+            <column caption='&quot;Tenure&quot;' datatype='string' name='[Calculation_0799674825916428]' role='dimension' type='nominal' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='&quot;Tenure&quot;' />
+            </column>
+            <column caption='HR_Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0799674823974919]' derivation='None' name='[none:Calculation_0799674823974919:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_0799674825547786]' derivation='None' name='[none:Calculation_0799674825547786:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0799674825916428]' derivation='None' name='[none:Calculation_0799674825916428:nk]' pivot='key' type='nominal' />
+            <column-instance column='[salary]' derivation='None' name='[none:salary:nk]' pivot='key' type='nominal' />
+            <column caption='Salary' datatype='string' name='[salary]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Tenure' datatype='integer' name='[tenure]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674823974919:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_0799674823974919:ok]' />
+              <groupfilter function='member' level='[none:Calculation_0799674823974919:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;low&quot;</bucket>
+              <bucket>&quot;medium&quot;</bucket>
+              <bucket>&quot;high&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674823974919:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' value='false' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='#000000' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674823974919:ok]' value='#000000' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825916428:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825916428:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='1' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825547786:nk] * [federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk])</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674825916428:nk] / ([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674823974919:ok] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]))</cols>
+      </table>
+      <simple-id uuid='{463D041A-93A6-49DE-A398-CE6D368A8B9B}' />
+    </worksheet>
+    <worksheet name='Satisfaction level by Tenure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='Satisfaction Level L = 1' datatype='real' name='[Avg monthly hours L=1 (copy)_0799674788503555]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [left] = 1 THEN [satisfaction_level] END' />
+            </column>
+            <column caption='&quot;Tenure&quot;' datatype='string' name='[Calculation_0799674790100998]' role='dimension' type='nominal' user:unnamed='Sheet 5'>
+              <calculation class='tableau' formula='&quot;Tenure&quot;' />
+            </column>
+            <column caption='Satisfaction Level L = 0' datatype='real' name='[Satisfaction Level L = 1 (copy)_0799674788622340]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [left] = 0 THEN [satisfaction_level] END' />
+            </column>
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0799674790100998]' derivation='None' name='[none:Calculation_0799674790100998:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:ok]' pivot='key' type='ordinal' />
+            <column caption='Satisfaction Level' datatype='real' name='[satisfaction_level]' role='measure' type='quantitative' />
+            <column-instance column='[Avg monthly hours L=1 (copy)_0799674788503555]' derivation='Sum' name='[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Satisfaction Level L = 1 (copy)_0799674788622340]' derivation='Sum' name='[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Tenure' datatype='integer' name='[tenure]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:tenure:ok]' direction='DESC' measure-to-sort-by='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:tenure:ok]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]' scope='cols' value='false' />
+            <encoding attr='space' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.10000000000000001' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' scope='cols' value='Satisfaction Level' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:tenure:ok]' value='48' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' value='false' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674790100998:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674790100998:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674790100998:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:tenure:ok]' value='#000000' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline2' value='#f0f0f0d9' />
+            <format attr='palette' id='refline2' value='bp_yellow' />
+            <format attr='opacity' id='refline2' value='219' />
+            <format attr='fill-color' id='refline1' value='#f0f0f0d9' />
+            <format attr='palette' id='refline1' value='bp_grayblue' />
+            <format attr='opacity' id='refline1' value='219' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='2' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#d4d4d4' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' value='Status'>
+              <formatted-text>
+                <run>Status</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' boxplot-mark-exclusion='true' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]' z-order='1' />
+            <reference-line axis-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]' boxplot-mark-exclusion='true' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]' z-order='2' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0799674790100998:nk] / ([federated.09onw4n18ceu1b1dz2kx20464naf].[none:tenure:ok] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]))</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Satisfaction Level L = 1 (copy)_0799674788622340:qk] + [federated.09onw4n18ceu1b1dz2kx20464naf].[sum:Avg monthly hours L=1 (copy)_0799674788503555:qk])</cols>
+      </table>
+      <simple-id uuid='{76BA63A9-2AC4-46D0-A0D2-B8C7C45F5512}' />
+    </worksheet>
+    <worksheet name='Tenure Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR_Attrition' name='federated.09onw4n18ceu1b1dz2kx20464naf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09onw4n18ceu1b1dz2kx20464naf'>
+            <column caption='&quot;Count&quot;' datatype='string' name='[Calculation_0289774860124169]' role='dimension' type='nominal' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='&quot;Count&quot;' />
+            </column>
+            <column caption='HR_Attrition.csv' datatype='table' name='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086]' derivation='Count' name='[__tableau_internal_object_id__].[cum:cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:ok]' pivot='key' type='ordinal'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column aggregation='Sum' caption='Left' datatype='integer' name='[left]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0289774860124169]' derivation='None' name='[none:Calculation_0289774860124169:nk]' pivot='key' type='nominal' />
+            <column-instance column='[left]' derivation='None' name='[none:left:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Tenure' datatype='integer' name='[tenure]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='40' />
+            <format attr='display' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' value='false' />
+            <format attr='text-orientation' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk]' value='-90' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk]' value='bold' />
+            <format attr='color' field='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_yellow' />
+            <format attr='opacity' id='refline0' value='219' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' />
+              <text column='[federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cum:cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:ok]' />
+            </encodings>
+            <customized-tooltip show-buttons='false'>
+              <formatted-text>
+                <run fontcolor='#757575'>Left:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575'>Number Of Projects:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09onw4n18ceu1b1dz2kx20464naf].[none:number_project:ok]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:Calculation_0289774860124169:nk] * [federated.09onw4n18ceu1b1dz2kx20464naf].[__tableau_internal_object_id__].[cnt:HR_Attrition.csv_5C96D52022794D55AB1758CEE994C086:qk])</rows>
+        <cols>([federated.09onw4n18ceu1b1dz2kx20464naf].[none:tenure:ok] / [federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok])</cols>
+      </table>
+      <simple-id uuid='{4455DC4D-C7B4-4BE4-85AB-926EAD72479E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='55000' id='3' name='Monthly Hours by Number of Projects' w='96333' x='333' y='222' />
+        <zone h='50889' id='5' name='Number of Projects Histogram' w='44400' x='333' y='55667' />
+        <zone forceUpdate='true' h='48556' id='7' type-v2='text' w='54000' x='45467' y='57778'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000'>It might be natural that people who work on more projects would also work longer hours.However, a few things stand out from this plot.</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>1. Two groups of </run>
+            <run bold='true' fontcolor='#000000'>employees left: (A) those who worked much less than peers—possibly fired or already exiting, and (B) those who worked much more—likely high contributors who quit. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>2. Everyone with seven projects left the company, and the interquartile ranges of this group and those who left with six projects was ~255 to 295 hours/month, much more than any other group. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>3. The </run>
+            <run bold='true' fontcolor='#000000'>optimal number of projects for employees to work on seems to be 3 - 4</run>
+            <run fontcolor='#000000'>. The ratio of left/stayed is very small for these cohorts.</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>4. If you assume a work week of 40 hours and two weeks of vacation per year, then the average number of working hours per month of employees working Monday to Friday = 50 weeks * 40 hours per week / 12 months = 166.67 hours per month. This means that, aside from the employees who worked on two projects, every group, even those who didn&apos;t leave the company worked considerably more hours than this. </run>
+            <run bold='true' fontcolor='#000000'>It seems that employees here are overworked</run>
+            <run fontcolor='#000000'>.</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>You can confirm that all employees with seven projects left.</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='7111' id='8' name='Monthly Hours by Number of Projects' pane-specification-id='8' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' type-v2='color' w='4800' x='94400' y='6333' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='33' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='55000' id='3' is-fixed='true' name='Monthly Hours by Number of Projects' w='96333' x='333' y='222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7111' id='8' name='Monthly Hours by Number of Projects' pane-specification-id='8' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' type-v2='color' w='4800' x='94400' y='6333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50889' id='5' is-fixed='true' name='Number of Projects Histogram' w='44400' x='333' y='55667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='48556' id='7' type-v2='text' w='54000' x='45467' y='57778'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>It might be natural that people who work on more projects would also work longer hours.However, a few things stand out from this plot.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>1. Two groups of </run>
+                    <run bold='true' fontcolor='#000000'>employees left: (A) those who worked much less than peers—possibly fired or already exiting, and (B) those who worked much more—likely high contributors who quit. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>2. Everyone with seven projects left the company, and the interquartile ranges of this group and those who left with six projects was ~255 to 295 hours/month, much more than any other group. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>3. The </run>
+                    <run bold='true' fontcolor='#000000'>optimal number of projects for employees to work on seems to be 3 - 4</run>
+                    <run fontcolor='#000000'>. The ratio of left/stayed is very small for these cohorts.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>4. If you assume a work week of 40 hours and two weeks of vacation per year, then the average number of working hours per month of employees working Monday to Friday = 50 weeks * 40 hours per week / 12 months = 166.67 hours per month. This means that, aside from the employees who worked on two projects, every group, even those who didn&apos;t leave the company worked considerably more hours than this. </run>
+                    <run bold='true' fontcolor='#000000'>It seems that employees here are overworked</run>
+                    <run fontcolor='#000000'>.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>You can confirm that all employees with seven projects left.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{44AF9F5F-14B5-4741-A44E-7DFACB73F5BD}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='50222' id='3' name='Monthly Hours by Satisfaction Level' w='50400' x='267' y='444' />
+        <zone h='50111' id='5' name='Monthly Hours by Last Evaluation Score' w='47800' x='51267' y='444' />
+        <zone h='8444' id='4' name='Monthly Hours by Satisfaction Level' pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type-v2='color' w='3867' x='96200' y='333' />
+        <zone forceUpdate='true' h='35778' id='6' type-v2='text' w='42867' x='54800' y='51444'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>The following observations can be made from the scatterplot above:</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>1. The scatterplot indicates two groups of employees who left: overworked employees who performed very well and employees who worked slightly under the nominal monthly average of 166.67 hours with lower evaluation scores. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>2. There seems to be a correlation between hours worked and evaluation score. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>3. There isn&apos;t a high percentage of employees in the upper left quadrant of this plot; but </run>
+            <run bold='true' fontcolor='#000000'>working long hours doesn&apos;t guarantee a good evaluation score.</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>4.</run>
+            <run bold='true' fontcolor='#000000'> Most of the employees in this company work well over 167 hours per month.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='34889' id='7' type-v2='text' w='48933' x='1933' y='53444'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>The following observations can be made from the scatterplot above:</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>1. The scatterplot above shows that there was a sizeable group of employees who worked ~240-315 hours per month. 315 hours per month is over 75 hours per week for a whole year. It&apos;s likely this is related to their satisfaction levels being close to zero. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>2. The plot also shows another group of people who left, those who had more normal working hours. Even so, their satisfaction was only around 0.4. It&apos;s difficult to speculate about why they might have left. It&apos;s possible they felt pressured to work more, considering so many of their peers worked more. And that pressure could have lowered their satisfaction levels. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>3. Finally, there is a group who worked ~210-280 hours per month, and they had satisfaction levels ranging ~0.7-0.9. </run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='28' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='50222' id='3' is-fixed='true' name='Monthly Hours by Satisfaction Level' w='50400' x='267' y='444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8444' id='4' name='Monthly Hours by Satisfaction Level' pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type-v2='color' w='3867' x='96200' y='333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50111' id='5' is-fixed='true' name='Monthly Hours by Last Evaluation Score' w='47800' x='51267' y='444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='35778' id='6' type-v2='text' w='42867' x='54800' y='51444'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>The following observations can be made from the scatterplot above:</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>1. The scatterplot indicates two groups of employees who left: overworked employees who performed very well and employees who worked slightly under the nominal monthly average of 166.67 hours with lower evaluation scores. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>2. There seems to be a correlation between hours worked and evaluation score. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>3. There isn&apos;t a high percentage of employees in the upper left quadrant of this plot; but </run>
+                    <run bold='true' fontcolor='#000000'>working long hours doesn&apos;t guarantee a good evaluation score.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>4.</run>
+                    <run bold='true' fontcolor='#000000'> Most of the employees in this company work well over 167 hours per month.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='34889' id='7' type-v2='text' w='48933' x='1933' y='53444'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>The following observations can be made from the scatterplot above:</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>1. The scatterplot above shows that there was a sizeable group of employees who worked ~240-315 hours per month. 315 hours per month is over 75 hours per week for a whole year. It&apos;s likely this is related to their satisfaction levels being close to zero. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>2. The plot also shows another group of people who left, those who had more normal working hours. Even so, their satisfaction was only around 0.4. It&apos;s difficult to speculate about why they might have left. It&apos;s possible they felt pressured to work more, considering so many of their peers worked more. And that pressure could have lowered their satisfaction levels. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>3. Finally, there is a group who worked ~210-280 hours per month, and they had satisfaction levels ranging ~0.7-0.9. </run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2C586F03-7119-4492-BE04-D2BD8507B090}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='55000' id='3' name='Satisfaction level by Tenure' w='98933' x='333' y='222' />
+        <zone h='44333' id='5' name='Tenure Histogram' w='41333' x='333' y='54556' />
+        <zone h='7444' id='6' name='Tenure Histogram' pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type-v2='color' w='3933' x='96067' y='6778' />
+        <zone forceUpdate='true' h='35222' id='7' type-v2='text' w='54000' x='44533' y='61222'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>1. Employees who left fall into two general categories: </run>
+            <run bold='true' fontcolor='#000000'>dissatisfied employees with shorter tenures</run>
+            <run fontcolor='#000000'> and </run>
+            <run bold='true' fontcolor='#000000'>very satisfied employees with medium-length tenures.</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>2. </run>
+            <run bold='true' fontcolor='#000000'>Four-year employees who left seem to have an unusually low satisfaction level.</run>
+            <run fontcolor='#000000'>Æ </run>
+            <run bold='true' fontcolor='#000000'>It&apos;s worth investigating changes to company policy</run>
+            <run fontcolor='#000000'> that might have affected people specifically at the four-year mark, if possible. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>3. The longest-tenured employees didn&apos;t leave. Their satisfaction levels aligned with those of newer employees who stayed. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>4. The histogram shows that there are</run>
+            <run bold='true' fontcolor='#000000'> relatively few longer-tenured employees</run>
+            <run fontcolor='#000000'>. It&apos;s possible that</run>
+            <run bold='true' fontcolor='#000000'> they&apos;re the higher-ranking, higher-paid employees.</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='26' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='55000' id='3' is-fixed='true' name='Satisfaction level by Tenure' w='98933' x='333' y='222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44333' id='5' is-fixed='true' name='Tenure Histogram' w='41333' x='333' y='54556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7444' id='6' name='Tenure Histogram' pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type-v2='color' w='3933' x='96067' y='6778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='35222' id='7' type-v2='text' w='54000' x='44533' y='61222'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>1. Employees who left fall into two general categories: </run>
+                    <run bold='true' fontcolor='#000000'>dissatisfied employees with shorter tenures</run>
+                    <run fontcolor='#000000'> and </run>
+                    <run bold='true' fontcolor='#000000'>very satisfied employees with medium-length tenures.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>2. </run>
+                    <run bold='true' fontcolor='#000000'>Four-year employees who left seem to have an unusually low satisfaction level.</run>
+                    <run fontcolor='#000000'>Æ </run>
+                    <run bold='true' fontcolor='#000000'>It&apos;s worth investigating changes to company policy</run>
+                    <run fontcolor='#000000'> that might have affected people specifically at the four-year mark, if possible. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>3. The longest-tenured employees didn&apos;t leave. Their satisfaction levels aligned with those of newer employees who stayed. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>4. The histogram shows that there are</run>
+                    <run bold='true' fontcolor='#000000'> relatively few longer-tenured employees</run>
+                    <run fontcolor='#000000'>. It&apos;s possible that</run>
+                    <run bold='true' fontcolor='#000000'> they&apos;re the higher-ranking, higher-paid employees.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A33086AB-13FD-427C-A552-85A3995C0AB1}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='52556' id='3' name='Salary histogram by tenure : Short tenured' w='48867' x='267' y='2778' />
+        <zone h='52556' id='5' name='Salary histogram by tenure : Long tenured' w='44533' x='51133' y='2778' />
+        <zone h='9444' id='4' name='Salary histogram by tenure : Short tenured' pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' type-v2='color' w='6267' x='94667' y='1667' />
+        <zone forceUpdate='true' h='19222' id='6' type-v2='text' w='54000' x='22200' y='59444'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>1. </run>
+            <run bold='true' fontcolor='#000000'>Long-tenure employees</run>
+            <run fontcolor='#000000'> are</run>
+            <run bold='true' fontcolor='#000000'>Æ </run>
+            <run fontcolor='#000000'>spread across low, medium, and high salaries and </run>
+            <run bold='true' fontcolor='#000000'>not dominated by high-paid employees</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>2. Employees are</run>
+            <run bold='true' fontcolor='#000000'> NOT </run>
+            <run fontcolor='#000000'>getting rewarded for loyalty.</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='25' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='52556' id='3' is-fixed='true' name='Salary histogram by tenure : Short tenured' w='48867' x='267' y='2778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9444' id='4' name='Salary histogram by tenure : Short tenured' pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' type-v2='color' w='6267' x='94667' y='1667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52556' id='5' is-fixed='true' name='Salary histogram by tenure : Long tenured' w='44533' x='51133' y='2778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='19222' id='6' type-v2='text' w='54000' x='22200' y='59444'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>1. </run>
+                    <run bold='true' fontcolor='#000000'>Long-tenure employees</run>
+                    <run fontcolor='#000000'> are</run>
+                    <run bold='true' fontcolor='#000000'>Æ </run>
+                    <run fontcolor='#000000'>spread across low, medium, and high salaries and </run>
+                    <run bold='true' fontcolor='#000000'>not dominated by high-paid employees</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>2. Employees are</run>
+                    <run bold='true' fontcolor='#000000'> NOT </run>
+                    <run fontcolor='#000000'>getting rewarded for loyalty.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{23760740-EE0F-4F93-81E1-2CED7FC15778}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='51444' id='3' name='Monthly hours vs Promotion last 5 years' w='51733' x='48000' y='444' />
+        <zone h='7111' id='4' name='Monthly hours vs Promotion last 5 years' pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type-v2='color' w='4933' x='96067' y='6111' />
+        <zone h='51000' id='5' name='Count of stayed/left by Department' w='51667' x='267' y='48667' />
+        <zone forceUpdate='true' h='16889' id='8' type-v2='text' w='36733' x='7933' y='11778'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>-----&gt;</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>1. Very few employees who were promoted in the last five years left.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000'>2. </run>
+            <run bold='true' fontcolor='#000000'>Very few employees who worked the most hours were promoted.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000'>3. All of the employees </run>
+            <run bold='true' fontcolor='#000000'>who left were working the longest hours.</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='16889' id='9' type-v2='text' w='36733' x='57267' y='68222'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>&lt;-----</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000'>There doesn&apos;t seem to be any department that differs significantly in its proportion of employees who left to those who stayed. </run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='22' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='51444' id='3' is-fixed='true' name='Monthly hours vs Promotion last 5 years' w='51733' x='48000' y='444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7111' id='4' name='Monthly hours vs Promotion last 5 years' pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type-v2='color' w='4933' x='96067' y='6111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='16889' id='8' type-v2='text' w='36733' x='7933' y='11778'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>-----&gt;</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>1. Very few employees who were promoted in the last five years left.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>2. </run>
+                    <run bold='true' fontcolor='#000000'>Very few employees who worked the most hours were promoted.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>3. All of the employees </run>
+                    <run bold='true' fontcolor='#000000'>who left were working the longest hours.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51000' id='5' is-fixed='true' name='Count of stayed/left by Department' w='51667' x='267' y='48667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='16889' id='9' type-v2='text' w='36733' x='57267' y='68222'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>&lt;-----</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#e15759' fontsize='10'>INSIGHTS</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000'>There doesn&apos;t seem to be any department that differs significantly in its proportion of employees who left to those who stayed. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C497A411-AC98-47D8-B8CE-D1497C8573CC}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 6'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone forceUpdate='true' h='37667' id='3' type-v2='text' w='58067' x='22667' y='21667'>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='14'>Final Verdict</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontsize='12'>It appears that</run>
+            <run bold='true' fontcolor='#000000' fontsize='12'> employees are leaving the company as a result of poor management</run>
+            <run fontcolor='#000000' fontsize='12'>. Leaving is tied to longer working hours, many projects, and generally lower satisfaction levels. </run>
+            <run bold='true' fontcolor='#000000' fontsize='12'>It can be ungratifying to work long hours and not receive promotions or good evaluation scores</run>
+            <run fontcolor='#000000' fontsize='12'>. There&apos;s a sizeable group of </run>
+            <run bold='true' fontcolor='#000000' fontsize='12'>employees at this company who are probably burned out</run>
+            <run fontcolor='#000000' fontsize='12'>. It also appears that</run>
+            <run bold='true' fontcolor='#000000' fontsize='12'> if an employee has spent more than six years at the company, they tend not to leave. </run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='14' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='37667' id='3' type-v2='text' w='58067' x='22667' y='21667'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#e15759' fontsize='14'>Final Verdict</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>It appears that</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'> employees are leaving the company as a result of poor management</run>
+                    <run fontcolor='#000000' fontsize='12'>. Leaving is tied to longer working hours, many projects, and generally lower satisfaction levels. </run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>It can be ungratifying to work long hours and not receive promotions or good evaluation scores</run>
+                    <run fontcolor='#000000' fontsize='12'>. There&apos;s a sizeable group of </run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>employees at this company who are probably burned out</run>
+                    <run fontcolor='#000000' fontsize='12'>. It also appears that</run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'> if an employee has spent more than six years at the company, they tend not to leave. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{412E5C89-ECD2-416A-A858-2CF1105C7580}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='900' maxwidth='1500' minheight='900' minwidth='1500' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='1' param='vert' removable='false' type-v2='layout-flow' w='98934' x='533' y='889'>
+            <zone h='7000' id='4' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98934' x='533' y='889' />
+            <zone h='91222' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98934' x='533' y='7889'>
+              <flipboard active-id='2' nav-type='dot' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='Dashboard 1' id='2' />
+                  <story-point captured-sheet='Dashboard 2' id='3' />
+                  <story-point captured-sheet='Dashboard 3' id='4' />
+                  <story-point captured-sheet='Dashboard 4' id='5' />
+                  <story-point captured-sheet='Dashboard 5' id='6' />
+                  <story-point captured-sheet='Dashboard 6' id='7' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{819B6149-90E2-4590-9334-E9DD5BF66E4A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Monthly Hours by Number of Projects'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3A8CB120-0560-4289-8204-D476D66D341A}' />
+    </window>
+    <window class='worksheet' name='Number of Projects Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='164'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A1AF4CE0-E3F9-4B7D-9A32-A2F6F521B7EC}' />
+    </window>
+    <window class='worksheet' name='Monthly Hours by Satisfaction Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BC90DA12-7BED-46C3-BDEB-6F2B7DF8334C}' />
+    </window>
+    <window class='worksheet' name='Monthly Hours by Last Evaluation Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{23C7D2FE-A57B-429C-B2EB-90F8977AF403}' />
+    </window>
+    <window class='worksheet' name='Satisfaction level by Tenure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E5EFB847-E9F2-488E-BE86-906640FB1520}' />
+    </window>
+    <window class='worksheet' name='Tenure Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='164'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3285E948-0C8E-4EE0-84D7-20E8BA5A8551}' />
+    </window>
+    <window class='worksheet' name='Salary histogram by tenure : Short tenured'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7024154-7D34-4EBB-80EA-958F541F0B05}' />
+    </window>
+    <window class='worksheet' name='Salary histogram by tenure : Long tenured'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:salary:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2E6983D7-811B-4A6A-9B90-FE0E49D9C3B6}' />
+    </window>
+    <window class='worksheet' name='Monthly hours vs Promotion last 5 years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6C78866E-1E1B-4FD8-8246-3424F0F6F7C4}' />
+    </window>
+    <window class='worksheet' name='Count of stayed/left by Department'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.09onw4n18ceu1b1dz2kx20464naf].[none:left:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{33D18D0E-BE32-431E-A51B-DB19063EF989}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Monthly Hours by Number of Projects'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Projects Histogram'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{869F5963-8382-4A19-AD87-56A0F8DEDE07}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Monthly Hours by Last Evaluation Score'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Hours by Satisfaction Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B0A15496-4418-49C3-8CF0-169CECCB2261}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Satisfaction level by Tenure'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tenure Histogram'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B7D445F2-98FA-4469-B0BF-D4FE9D6DE953}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Salary histogram by tenure : Long tenured'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Salary histogram by tenure : Short tenured'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5E2F79CE-DD7C-4354-8EC0-F7AF90545B8E}' />
+    </window>
+    <window class='dashboard' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='Count of stayed/left by Department'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly hours vs Promotion last 5 years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D77FF1D9-65ED-4E14-817C-AA039751A7AC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 6'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{30F51039-BB65-4DEC-92D0-547646E1664C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3A9025FF-29D0-4ABE-B27B-40EA8DFA6533}' />
+    </window>
+  </windows>
+</workbook>
