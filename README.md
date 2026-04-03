@@ -30,7 +30,7 @@ Initial data validation revealed:
 - ~20% duplicate records (removed to prevent bias)
 - Presence of outliers in tenure (retained for behavioral analysis)
 
-![Monthly Hours by Number of Projects](Screenshots\6.png)
+![Monthly Hours by Number of Projects](Screenshots/6.png)
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Key patterns identified through Tableau dashboards:
@@ -38,13 +38,13 @@ Key patterns identified through Tableau dashboards:
 - **Bimodal attrition behavior**\
 Employees left due to both burnout (250–300+ hrs/month) and underutilization (low workload)
 
-![Monthly Hours by Number of Projects](Screenshots\1.png)
+![Monthly Hours by Number of Projects](Screenshots/1.png)
 - **Project allocation imbalance**\
 Employees handling 6–7 projects showed high attrition, while 3–4 projects formed a stable zone
 - **Promotion as a retention factor**\
 Very few promoted employees left; high-performing employees were often not promoted
 
-![Alt](Screenshots\2.png)
+![Alt](Screenshots/2.png)
 - **Tenure insights**\
 Early exits were linked to dissatisfaction, while employees staying beyond ~6 years rarely left
 - **Department impact was minimal**\
@@ -58,7 +58,7 @@ Behavioral features were engineered from:
 - Growth (promotion history, tenure)
 - Performance (evaluation scores)
 
-![Monthly Hours by Number of Projects](Screenshots\3.png)
+![Monthly Hours by Number of Projects](Screenshots/3.png)
 
 ### Models Used
 - Logistic Regression (baseline)
@@ -69,9 +69,9 @@ Behavioral features were engineered from:
 - ROC-AUC: 96.5%
 - Recall: 87.9%
 
-![Alt](Screenshots\4.png)
+![Alt](Screenshots/4.png)
 
-![Alt](Screenshots\5.png)
+![Alt](Screenshots/5.png)
 
 Tree-based models outperformed logistic regression by capturing non-linear relationships in employee behavior.
 
